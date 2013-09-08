@@ -1,0 +1,41 @@
+﻿a.crumclass, a:visited { color: white; text-decoration:none; }
+a.crumclass:hover { color: white; text-decoration:none;color:Green; }
+a.crumclass:active { color: white; text-decoration:none;color:Orange; }
+
+.breadcrumbs {
+	width: 994px;
+	height: 40px;	
+	color: #fff;
+	background: #223E57 url(images/h1-bg.png) no-repeat;
+	/*padding: 15px 0 0 15px;
+	margin-bottom: 35px;*/	
+	text-align:left;
+	 font: 11px Arial, Helvetica, sans-serif;
+    background-image:url('bc_bg.png'); 
+    background-repeat:repeat-x;
+    height:40px;
+    line-height:35px;
+    border:solid 1px #cacaca;
+    width:100%;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;    vertical-align:middle;	cursor:pointer;
+}
+.breadcrumbs a {
+	color: #fff;
+	font-size:18px;	
+	height:30px;  
+    background-image:url('../img/bc_separator.png'); 
+    background-repeat:no-repeat; 
+    background-position:right;
+    padding-right: 15px;
+    text-decoration: none;
+	padding-left:10px;	
+}
+.arrowcrum
+{
+	width:16px;
+	height:16px;
+	margin-left:2px;
+	margin-right:2px;	
+}
