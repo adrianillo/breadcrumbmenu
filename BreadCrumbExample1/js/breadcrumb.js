@@ -1,4 +1,16 @@
-﻿//requiere jquery, mootools-core.js y mootools-core.js
+﻿/* 
+ * BreadCrumb 0.0.1 - A Jquery data uploader   
+ * Homepage: www.articlage.com/adrianillo/article/BreadCrumb 
+ * 
+ * Author:      Adrianillo 
+ * Twitter:     @adrianillo 
+ * Mail:        elcorreillodeadrianillo@gmail.com 
+ * 
+ * licensed under the MIT (MIT-LICENSE.txt)  
+ * http://www.opensource.org/licenses/mit-license.php 
+ *
+ * requiere jquery, mootools-core.js y mootools-core.js
+ */
 jQuery.extend({
     breadcrumb: function (selector, o) {
         this.s = o;
@@ -79,6 +91,11 @@ jQuery.extend({
             listitembread.pop();
             paintbreadcrumb();
         };
+        this.removecrums = function (n) {
+            for(var i=0;i<n;i++)
+                listitembread.pop();
+            paintbreadcrumb();
+        };
         this.changecrum = function (l) {
             this.removecrumwithoutpaint();
             this.addcrum(l)
@@ -87,12 +104,22 @@ jQuery.extend({
             listitembread.pop();
         };
         this.removeto=function (i)
-        {
+        {        
         var to=listitembread.length-i;
             for(var j=1;j<to;j++)
                 this.removecrumwithoutpaint();
             paintbreadcrumb();
-        }
+        };
+        this.clear=function()
+        {
+            listitembread=[];
+            paintbreadcrumb();
+        };
+         this.getlastcrum=function()
+        {
+            return  listitembread[listitembread.length-1];
+            
+        };
 
     },
     itembread: function (textitem,functioncrum,args) {
