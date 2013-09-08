@@ -79,11 +79,14 @@ function change()
 
     <form id="form1" runat="server">
     <div>
-     <div id="tuts">
-    <div class="tuts_inner">
+     <div id="tuts">
+
+    <div class="tuts_inner">
+
     		<div id='contentbreadcrumbs' class="breadcrumbs">    							
 
-<div class="inner-content">   </div>
+<div class="inner-content">
+   </div>
     </div>
         </div>
         <br />

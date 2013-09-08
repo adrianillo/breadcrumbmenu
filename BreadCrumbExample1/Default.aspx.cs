@@ -1,4 +1,17 @@
-﻿using System;
+﻿/* 
+ * BreadCrumb 0.0.1 - A Jquery data uploader   
+ * Homepage: www.articlage.com/adrianillo/article/BreadCrumb 
+ * 
+ * Author:      Adrianillo 
+ * Twitter:     @adrianillo 
+ * Mail:        elcorreillodeadrianillo@gmail.com 
+ * 
+ * licensed under the MIT (MIT-LICENSE.txt)  
+ * http://www.opensource.org/licenses/mit-license.php 
+ *
+ * requiere jquery, mootools-core.js y mootools-core.js
+ */
+using System;
 using System.Collections;
 using System.Configuration;
 using System.Data;

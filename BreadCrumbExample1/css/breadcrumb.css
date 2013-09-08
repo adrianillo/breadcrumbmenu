@@ -1,4 +1,17 @@
-﻿a.crumclass, a:visited { color: white; text-decoration:none; }
+﻿/* 
+ * BreadCrumb 0.0.1 - A Jquery data uploader   
+ * Homepage: www.articlage.com/adrianillo/article/BreadCrumb 
+ * 
+ * Author:      Adrianillo 
+ * Twitter:     @adrianillo 
+ * Mail:        elcorreillodeadrianillo@gmail.com 
+ * 
+ * licensed under the MIT (MIT-LICENSE.txt)  
+ * http://www.opensource.org/licenses/mit-license.php 
+ *
+ * requiere jquery, mootools-core.js y mootools-core.js
+ */
+a.crumclass, a:visited { color: white; text-decoration:none; }
 a.crumclass:hover { color: white; text-decoration:none;color:Green; }
 a.crumclass:active { color: white; text-decoration:none;color:Orange; }
 
@@ -19,7 +32,9 @@ a.crumclass:active { color: white; text-decoration:none;color:Orange; }
     width:100%;
     overflow:hidden;
     margin:0px;
-    padding:0px;    vertical-align:middle;	cursor:pointer;
+    padding:0px;
+    vertical-align:middle;
+	cursor:pointer;
 }
 .breadcrumbs a {
 	color: #fff;
@@ -30,7 +45,8 @@ a.crumclass:active { color: white; text-decoration:none;color:Orange; }
     background-position:right;
     padding-right: 15px;
     text-decoration: none;
-	padding-left:10px;	
+	padding-left:10px;
+	
 }
 .arrowcrum
 {
