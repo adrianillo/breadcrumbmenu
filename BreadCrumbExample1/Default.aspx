@@ -21,13 +21,13 @@ $(document).ready(function() {
 
  bb=new jQuery.breadcrumb("contentbreadcrumbs",
             {
-                //imgarrow:'img/arrow.png', //ruta para la imagen de la flecha entre crrums
-                classarrow:'arrowcrum', // clase de estilo para la flecha entre crrums
-                autocrum:true, // si es true  borra los crum hasta el clicado
-                classcrum:'crumclass', // clase de estilo para cada crum
-                classbread:'breadcrumbbs', // clase de estilo para cada el contenedor de los crum
-                dinamic: true,     // si es  true al hacer clik en el elemento realiza la función con los parametros definas en cada crum
-                crumclick: function (op,o) {          //función que realiza el hacer clik en cada crum si es el parametro anterior es dinamic                     
+                //imgarrow:'img/arrow.png', // path to the separator´s image  between menus
+                classarrow: 'arrowcrum', // style class for the separator image among menus
+                autocrum: true, // if true deletes the menus to the menu clicked
+                classcrum: 'crumclass', //style class for each menu
+                classbread: 'breadcrumbbs', // style class for each container menus
+                dinamic: true,     // if true clicking on the element performs the function with its parameters   that are defined in each menu
+                crumclick: function (op, o) {          // function is performed to click on each crum if the parameter above is dinamic                     
                      if(op!=null)
                         if(op.functioncrum!=null)
                             op.functioncrum(this,op,o,op.args.id,op.args.texto,1,2,3);                       
@@ -46,7 +46,7 @@ function add()
      {
         alert('hola, 1º argumento opcional: '+d+' 2º argumento opcional: '+e);
      },
-     {id:i,texto:'este es el segundo parametro opcional'}); // 1ºarg: texto a mostrar, 2º arg: parametro functioncrum, string , 3º arg: opciones para cada crum, aquí puedes poner los argumentos que quieras
+     { id: i, texto: 'este es el segundo parametro opcional' }); //Arg 1: text to display, 2nd arg: functioncrum parameter, string, 3rd arg: options for each menu, here you can put the arguments you want
      
      bb.addcrum(newitem);
      i++;
