@@ -41,12 +41,12 @@ $(document).ready(function() {
 
 function add()
 {
-     var newitem=new jQuery.itembread("hola",
+     var newitem=new jQuery.itembread("Hello",
      function (a,b,c,d,e,f)
      {
-        alert('hola, 1º argumento opcional: '+d+' 2º argumento opcional: '+e);
+         alert('Hello, 1º optional argument: ' + d + ' , 2º optional argument: ' + e);
      },
-     { id: i, texto: 'este es el segundo parametro opcional' }); //Arg 1: text to display, 2nd arg: functioncrum parameter, string, 3rd arg: options for each menu, here you can put the arguments you want
+     { id: i, texto: 'this is the second optional parameter.' }); //Arg 1: text to display, 2nd arg: functioncrum parameter, string, 3rd arg: options for each menu, here you can put the arguments you want
      
      bb.addcrum(newitem);
      i++;
@@ -59,12 +59,12 @@ function remove()
 }
 function change()
 {   
-    var newitem=new jQuery.itembread("Cambio menú",
+    var newitem = new jQuery.itembread("menu change",
     function (a,b,c,d,e,f)
     {
-          alert('Menú cambiado, 1º argumento opcional: '+d+' 2º argumento opcional: '+e);
+        alert('Menu changed, 1º optional argument: ' + d + ' , 2º optional argument : ' + e);
     },
-    {id:i,texto:'este es el segundo parametro opcional del menu cambiado.'}); 
+    { id: i, texto: 'this is the second optional parameter changed menu.' });
     bb.changecrum(newitem);
     i++;
 }
